@@ -70,15 +70,21 @@ img {
 
 .navbar__button {
   margin-left: 30px;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .navbar__phone {
   display: inline-block;
   color: #333333;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   text-decoration: none;
   padding-top: 10px;
+}
+
+.navbar__adress {
+  font-size: 13px;
 }
 
 @media (max-width: 768px) {
