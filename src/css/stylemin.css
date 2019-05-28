@@ -19,8 +19,8 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    min-width: 580px;
-    width: 95%;
+    max-width: 580px;
+    width: 90%;
   }
 }
 
