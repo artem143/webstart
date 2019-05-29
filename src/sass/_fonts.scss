@@ -18,11 +18,12 @@
     }
 
 @mixin reg {
-    font-family: 'Museo Sans Light', serif;
+    font-family: 'Museo Sans Light', sans-serif;
     font-weight: 300;
-}
-
+    }
 @mixin bold {
-    font-family: 'Museo Sans Black', serif;
+    font-family: 'Museo Sans Black';
     font-weight: 900;
 }
+   
+ 

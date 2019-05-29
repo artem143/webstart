@@ -1,5 +1,22 @@
-body {
+@font-face {
   font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Black';
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -71,7 +88,8 @@ img {
 
 .navbar__button {
   margin-left: 30px;
-  font-weight: 700;
+  font-family: 'Museo Sans Black';
+  font-weight: 900;
   font-size: 13px;
 }
 
@@ -79,7 +97,8 @@ img {
   display: inline-block;
   color: #333333;
   font-size: 20px;
-  font-weight: 700;
+  font-family: 'Museo Sans Black';
+  font-weight: 900;
   text-decoration: none;
   padding-top: 10px;
 }
@@ -96,7 +115,8 @@ img {
     width: 137px;
     height: 39px;
     font-size: 10px;
-    font-weight: 400;
+    font-family: 'Museo Sans Black';
+    font-weight: 900;
     padding: 15px 26px;
   }
   .navbar__logo {
@@ -109,7 +129,7 @@ img {
   background-color: #f5f5f5;
 }
 
-.hero-image {
+.hero-image__img {
   -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
           box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
@@ -128,7 +148,8 @@ img {
 
 .hero-text__title {
   font-size: 41px;
-  font-weight: 600;
+  font-family: 'Museo Sans Black';
+  font-weight: 900;
   line-height: 55px;
   margin-bottom: 40px;
 }
@@ -136,7 +157,8 @@ img {
 .hero-text__subtitle {
   display: inline-block;
   font-size: 20px;
-  font-weight: 600;
+  font-family: 'Museo Sans Black';
+  font-weight: 900;
   margin-bottom: 69px;
 }
 
@@ -173,7 +195,7 @@ img {
 }
 
 .hero-list__text {
-  max-width: 231px;
+  max-width: 236px;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -203,6 +225,7 @@ img {
     line-height: 1.4;
     margin: 0;
     font-family: 'Museo Sans Black';
+    font-weight: 900;
   }
   .hero-text__subtitle {
     margin-top: 8px;
@@ -222,21 +245,5 @@ img {
   .hero-list__image {
     margin-right: 15px;
   }
-}
-
-@font-face {
-  font-family: 'Museo Sans Light';
-  src: url("../fonts/MuseoSansCyrl-300.eot");
-  src: url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Museo Sans Black';
-  src: url("../fonts/MuseoSansCyrl-300.eot");
-  src: url("../fonts/MuseoSansCyrl-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 /*# sourceMappingURL=stylemin.css.map */
