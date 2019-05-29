@@ -1,6 +1,8 @@
 .hero
     padding: 50px 0px
     background-color: $hero-color
+    &-image 
+        box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
     &-block
         display: flex
     &-text 
@@ -47,19 +49,23 @@
             padding-right: 0
 @media (max-width: 768px)
     .hero
-        padding-top: 30px
+        padding-top: 44px
         &-text
             &__title 
                 font-size: 24px 
                 line-height: 1.4
-                margin-bottom: 13px
+                margin: 0
+                font-family: 'Museo Sans Black'
             &__subtitle
+                margin-top: 8px
                 font-size: 16px
                 margin-bottom: 28px
         &-list
+            margin-bottom: 38px
             &__item
                 margin-bottom: 20px
             &__text
                 font-size: 12px
+                line-height: 1
             &__image
                 margin-right: 15px
