@@ -112,10 +112,9 @@ img {
     display: none;
   }
   .navbar__button {
-    width: 137px;
-    height: 39px;
     font-size: 10px;
-    padding: 15px 26px;
+    margin-left: 0;
+    padding: 14px 26px;
   }
   .navbar__logo {
     width: 91px;
@@ -139,9 +138,9 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 43%;
-      flex-basis: 43%;
-  padding-right: 128px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 15px;
 }
 
 .hero-text__title {
