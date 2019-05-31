@@ -81,6 +81,12 @@ img {
   border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 18px;
+  }
+}
+
 .navbar {
   padding-top: 7px;
   padding-bottom: 8px;
@@ -167,12 +173,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 15px;
+  padding-right: 12px;
 }
 
 .hero-text__title {
@@ -302,13 +311,23 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.offer-description__text {
   line-height: 24px;
   font-size: 15px;
-  max-width: 486px;
+}
+
+.offer-description__text_1 {
   margin-right: 73px;
+  max-width: 230px;
+}
+
+.offer-description__text_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .offer-description__phone {
@@ -356,6 +375,24 @@ img {
   .offer {
     background-size: cover;
   }
+  .offer-description {
+    display: block;
+  }
+  .offer-description__text_1 {
+    margin-bottom: 18px;
+    min-width: 224px;
+    min-width: 100%;
+  }
+  .offer-description__text_2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 100%;
+  }
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
@@ -367,11 +404,25 @@ img {
 
 @media (max-width: 768px) {
   .offer {
+    padding-bottom: 56px;
+    padding-top: 53px;
     background: #fff;
+  }
+  .offer-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer-description__text_1 {
+    margin-bottom: 10px;
   }
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer__title {
+    line-height: 20px;
   }
 }
 /*# sourceMappingURL=stylemin.css.map */
