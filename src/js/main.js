@@ -4,8 +4,8 @@ var close = document.querySelector("#close");
 
 button.addEventListener("click", function() {
     modal.classList.add("modal_active");
-})
+});
 
 close.addEventListener("click", function() {
-    modal.classList.renove("modal_active");
-})
+    modal.classList.remove("modal_active");
+});
