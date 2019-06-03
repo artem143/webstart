@@ -8,8 +8,8 @@
 
 font-face {
   font-family: 'Museo Sans Bold';
-  src: url("../fonts/MuseoSansCyrl-300.eot");
-  src: url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -408,8 +408,8 @@ button, input {
 
 @media (max-width: 768px) {
   .offer {
-    padding-bottom: 56px;
-    padding-top: 53px;
+    padding-bottom: 55px;
+    padding-top: 55px;
     background: #fff;
   }
   .offer-description {
