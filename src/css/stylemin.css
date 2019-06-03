@@ -28,6 +28,10 @@ img {
   max-width: 100%;
 }
 
+button, input {
+  outline: none;
+}
+
 .container {
   width: 1171px;
   margin: auto;
