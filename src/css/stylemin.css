@@ -26,6 +26,7 @@ body {
 
 img {
   max-width: 100%;
+  outline: none;
 }
 
 button, input {
@@ -296,7 +297,7 @@ button, input {
 
 .offer {
   background: url("../img/fon-offer.png") no-repeat;
-  background-size: 50% contain;
+  background-size: contain;
   background-position: center right;
   position: relative;
 }
@@ -467,12 +468,15 @@ button, input {
 .portfolio {
   background: #f5f5f5 url("../img/portfolio/portfolio_1.jpg") repeat-y center left;
   background-size: 50%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .portfolio__title {
-  max-width: 786px;
+  max-width: 800px;
   margin: auto;
   margin-bottom: 100px;
+  font-size: 30px;
 }
 
 .portfolio__arrows {
@@ -493,5 +497,17 @@ button, input {
 
 .slider__image {
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    background: #f5f5f5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .portfolio__title {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=stylemin.css.map */
