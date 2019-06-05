@@ -26,7 +26,6 @@ body {
 
 img {
   max-width: 100%;
-  outline: none;
 }
 
 button, input {
@@ -497,6 +496,10 @@ button, input {
 
 .slider__image {
   margin: auto;
+}
+
+.slider__item {
+  outline: none;
 }
 
 @media (max-width: 768px) {
