@@ -96,9 +96,9 @@
                         Оставьте заявку на разработку бесплатного дизайн-проекта!
                     </span>
                     <!-- /.section-subtitle -->
-                    <form action="mailto:b-rabbit2013@yandex.ru" class="form offer__form">
-                        <input type="text" class="input offer__input" placeholder="Ваше имя">
-                        <input type="tel" class="input offer__input" placeholder="Ваш телефон">
+                    <form id="offer-form" action="#" class="form offer__form">
+                        <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+                        <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
                         <button class="button offer__button wow bounce ">
                             Получить бесплатный дизайн-проект
                         </button>
@@ -315,9 +315,10 @@
                             Для этого заполните форму ниже
                         </span>
                         <!-- /.form__subtitle -->
-                        <form action="">
-                            <input type="text" class="input brif__input" placeholder="Ваше имя">
-                            <input type="tel" class="input brif__input" placeholder="Ваш телефон">
+                        <form action="#" id="brif-form">
+                            <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+                            <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+                            <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
                             <button class="button brif__button">Рассчитать стотимость</button>
                             <span class="form__description">
                                 Мы перезвоним Вам в течение 60 секунд
@@ -352,9 +353,64 @@
     <script src="js/modal.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script>
         new WOW().init();
         $(document).ready(function() {
+
+        
+        $("#offer-form").validate({
+            rules: {
+                username: {
+                    required: true,
+                    minlength: 2,
+                    maxlenght: 15
+                },
+                phone: {
+                    required: true
+                }
+            },
+            messages: {
+                username:{
+                    required: "Заполните поле",
+                    minlength: jQuery.validator.format("Осталось символов: {0}")
+                },
+                phone: "Заполните поле"
+            }
+        });
+
+
+        $("#brif-form").validate({
+            rules: {
+                username: {
+                    required: true,
+                    minlength: 2,
+                    maxlenght: 15
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                phone: {
+                    required: true
+                }
+            },
+            messages: {
+                username:{
+                    required: "Заполните поле",
+                    minlength: jQuery.validator.format("Осталось символов: {0}")
+                },
+                email: {
+                    required: "Заполните поле",
+                    email: "Введите корректный email"
+                },
+                phone: "Заполните поле"
+            }
+        });
+
+        $(".phone").mask("8 (999) 999-99-99")
+
             $(".slider").slick({
               infinite: true,
               slidesToShow: 3,

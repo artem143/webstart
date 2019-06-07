@@ -37,6 +37,10 @@ button, input {
   margin: auto;
 }
 
+.error {
+  border: 1px solid red;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 760px;
@@ -818,6 +822,7 @@ button, input {
     background-position: top center, bottom center;
     background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
+    padding-top: 30px;
   }
   .brif-block {
     -webkit-box-orient: vertical;
@@ -827,6 +832,13 @@ button, input {
   }
   .brif__form {
     margin-top: 80px;
+    padding-left: 0;
+  }
+  .interview__title {
+    font-size: 18px;
+  }
+  .interview__subtitle {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=stylemin.css.map */
