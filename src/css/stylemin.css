@@ -39,6 +39,10 @@ button, input {
 
 .error {
   border: 1px solid red;
+  border-radius: 15px;
+  padding: 6px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -769,7 +773,7 @@ button, input {
   margin-right: 30px;
   text-align: center;
   line-height: 35px;
-  width: 35px;
+  min-width: 35px;
   height: 35px;
   border: 2px solid #333333;
   border-radius: 50%;
@@ -833,9 +837,10 @@ button, input {
   .brif {
     background-image: url("../img/brif/brif-1.jpg"), url("../img/brif/brif-2.jpg");
     background-position: top center, bottom center;
-    background-size: 100% 50%, cover;
+    background-size: 100% 47%, cover;
     background-repeat: repeat-x, no-repeat;
     padding-top: 30px;
+    padding-bottom: 35px;
   }
   .brif-block {
     -webkit-box-orient: vertical;
@@ -844,14 +849,29 @@ button, input {
             flex-direction: column;
   }
   .brif__form {
-    margin-top: 80px;
+    margin-top: 60px;
     padding-left: 0;
+  }
+  .interview {
+    padding-right: 0px;
+  }
+  .interview-list__item {
+    margin-bottom: 30px;
+  }
+  .interview-list__counter {
+    margin-right: 0;
+  }
+  .interview-list__text {
+    margin-left: 8px;
   }
   .interview__title {
     font-size: 18px;
+    margin-right: 80px;
   }
   .interview__subtitle {
     font-size: 14px;
+    margin-right: 130px;
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=stylemin.css.map */
