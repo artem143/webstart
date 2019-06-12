@@ -660,9 +660,13 @@ button, input {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .price__title_sub {
+    display: inline;
+  }
   .price__title {
     font-size: 18px;
     margin-bottom: 27px;
+    padding: 0px 30px;
   }
   .price__subtitle {
     font-size: 14px;
@@ -875,11 +879,11 @@ button, input {
   }
   .interview__title {
     font-size: 18px;
-    margin-right: 80px;
+    margin-right: 60px;
   }
   .interview__subtitle {
     font-size: 14px;
-    margin-right: 130px;
+    margin-right: 120px;
     margin-bottom: 40px;
   }
   .form__description_span {
@@ -912,6 +916,7 @@ button, input {
 .contacts__title {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  margin-top: 0;
   font-size: 22px;
   line-height: 33px;
   margin-bottom: 100px;
@@ -985,7 +990,7 @@ button, input {
   .contacts {
     width: 100%;
     padding-top: 45px;
-    padding-left: 22px;
+    padding-left: 0;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
